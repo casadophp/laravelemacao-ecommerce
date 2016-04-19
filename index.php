@@ -1,3 +1,0 @@
-<?php
-
-// ARQUIVO INICIAL DE PUSH COM GIT
