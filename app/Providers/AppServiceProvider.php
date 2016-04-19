@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace laravelinaction\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

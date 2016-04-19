@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Controllers\Auth;
+namespace laravelinaction\Http\Controllers\Auth;
 
-use App\Http\Controllers\Controller;
+use laravelinaction\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ResetsPasswords;
 
 class PasswordController extends Controller

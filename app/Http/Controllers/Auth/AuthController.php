@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Controllers\Auth;
+namespace laravelinaction\Http\Controllers\Auth;
 
-use App\User;
+use laravelinaction\User;
 use Validator;
-use App\Http\Controllers\Controller;
+use laravelinaction\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 
