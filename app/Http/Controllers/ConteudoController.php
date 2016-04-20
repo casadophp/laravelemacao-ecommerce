@@ -2,14 +2,19 @@
 
 namespace laravelinaction\Http\Controllers;
 
-use Illuminate\Http\Request;
-
-use laravelinaction\Http\Requests;
+use laravelinaction\Produtos;
 
 class ConteudoController extends Controller
 {
+    protected $produtos;
+    
+    public function __construct(Produtos $produto)
+    {
+        $this->produtos = $produto;
+    }
+    
     public function getIndex()
     {
-        return View("conteudo.home");
+        return View("conteudo.home", ["produtos" => $this->produtos->obterProdutos()]);
     }
 }

@@ -21,6 +21,7 @@ CREATE TABLE IF NOT EXISTS `laravelinaction`.`tb_produto` (
   `id_produto` INT NOT NULL AUTO_INCREMENT,
   `nm_produto` VARCHAR(45) NOT NULL,
   `nm_descricao` TEXT NOT NULL,
+  `nm_imagem` VARCHAR(150) NOT NULL DEFAULT 'semimagem.png',
   `cd_valor` DOUBLE NOT NULL,
   `created_at` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP,
   `updated_at` TIMESTAMP NULL DEFAULT NULL,

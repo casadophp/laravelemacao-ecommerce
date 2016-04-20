@@ -184,7 +184,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <div class="content">
                 <div class="content_top">
                     <div class="heading">
-                        <h3>New Products</h3>
+                        <h3>Novos produtos</h3>
                     </div>
                     <div class="see">
                         <p><a href="#">See all Products</a></p>
@@ -192,68 +192,23 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <div class="clear"></div>
                 </div>
                 <div class="section group">
-                    <div class="grid_1_of_4 images_1_of_4">
-                        <a href="preview.html">
-                            {!! HTML::image('midia/images/feature-pic1.jpg', 'Portal Pravaler') !!}
-                        </a>
-                        <h2>Lorem Ipsum is simply </h2>
-                        <div class="price-details">
-                            <div class="price-number">
-                                <p><span class="rupees">$620.87</span></p>
+                    @foreach ($produtos as $produto)
+                        <div class="grid_1_of_4 images_1_of_4">
+                            <a href="{{ URL::to("/produto/$produto->nm_produto") }}">
+                                {{ HTML::image("midia/images/produtos/$produto->nm_imagem", 'Laravel In Action') }}
+                            </a>
+                            <h2>{{$produto->nm_produto}}</h2>
+                            <div class="price-details">
+                                <div class="price-number">
+                                    <p><span class="rupees">R$ {{formataNumero($produto->cd_valor)}}</span></p>
+                                </div>
+                                <div class="add-cart">								
+                                    <h4><a href="{{ URL::to("/produto/$produto->nm_produto") }}">Comprar</a></h4>
+                                </div>
+                                <div class="clear"></div>
                             </div>
-                            <div class="add-cart">								
-                                <h4><a href="preview.html">Add to Cart</a></h4>
-                            </div>
-                            <div class="clear"></div>
                         </div>
-
-                    </div>
-                    <div class="grid_1_of_4 images_1_of_4">
-                        <a href="preview.html">
-                            {!! HTML::image('midia/images/feature-pic2.jpg', 'Portal Pravaler') !!}
-                        </a>
-                        <h2>Lorem Ipsum is simply </h2>
-                        <div class="price-details">
-                            <div class="price-number">
-                                <p><span class="rupees">$899.75</span></p>
-                            </div>
-                            <div class="add-cart">								
-                                <h4><a href="preview.html">Add to Cart</a></h4>
-                            </div>
-                            <div class="clear"></div>
-                        </div>
-
-                    </div>
-                    <div class="grid_1_of_4 images_1_of_4">
-                        <a href="preview.html">
-                            {!! HTML::image('midia/images/feature-pic3.jpg', 'Portal Pravaler') !!}
-                        </a>
-                        <h2>Lorem Ipsum is simply </h2>
-                        <div class="price-details">
-                            <div class="price-number">
-                                <p><span class="rupees">$599.00</span></p>
-                            </div>
-                            <div class="add-cart">								
-                                <h4><a href="preview.html">Add to Cart</a></h4>
-                            </div>
-                            <div class="clear"></div>
-                        </div>
-                    </div>
-                    <div class="grid_1_of_4 images_1_of_4">
-                        <a href="preview.html">
-                            {!! HTML::image('midia/images/feature-pic4.jpg', 'Portal Pravaler') !!}
-                        </a>
-                        <h2>Lorem Ipsum is simply </h2>
-                        <div class="price-details">
-                            <div class="price-number">
-                                <p><span class="rupees">$679.87</span></p>
-                            </div>
-                            <div class="add-cart">								
-                                <h4><a href="preview.html">Add to Cart</a></h4>
-                            </div>
-                            <div class="clear"></div>
-                        </div>				     
-                    </div>
+                    @endforeach
                 </div>
                 <div class="content_bottom">
                     <div class="heading">

@@ -17,6 +17,7 @@
         "laravelcollective/html": "5.2.*"
     },
     "autoload": {
+        "files": ["app/Http/helpers.php"],
         "classmap": [
             "database"
         ],
