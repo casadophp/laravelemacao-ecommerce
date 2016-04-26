@@ -15,6 +15,6 @@ class ConteudoController extends Controller
     
     public function getIndex()
     {
-        return View("conteudo.home", ["produtos" => $this->produtos->obterProdutos()]);
+        return \View::make("pages.home")->with("produtos", $this->produtos->obterProdutos());
     }
 }
