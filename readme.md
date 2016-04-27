@@ -9,3 +9,7 @@ Diagrama do banco de dados:
 ## Download do SQL banco de dados
 SQL do banco de dados:
 [Download SQL](https://github.com/casadophp/laravelemacao/blob/master/database/forwardengineering/forwardengineering.sql)
+
+## Link do Layout
+Link para demo e download:
+https://w3layouts.com/preview/?l=/home-shoppe-online-shopping-cart-mobile-website-template/
