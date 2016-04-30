@@ -29,14 +29,5 @@
         </div>
         @endforeach
     </div>
-    <div class="content_bottom">
-        <div class="heading">
-            <h3>Feature Products</h3>
-        </div>
-        <div class="see">
-            <p><a href="#">{{trans('portal.allproducts')}}</a></p>
-        </div>
-        <div class="clear"></div>
-    </div>
 </div>
 @stop
